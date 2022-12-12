@@ -230,6 +230,7 @@ console.log(newMap.get("name") === "john doe");
 // const mapValues = [...newMap.values()];
 // console.log(mapValues.includes("john doe"));
 newMap.delete("name");
+
 console.log(newMap);
 
 console.log(
@@ -242,6 +243,7 @@ When the action finishes, the program is informed and gets access to the result\
 );
 
 console.log("Problem #12: Explain what call back hell is.\n");
+
 console.log(
   "Callback Hell is essentially nested callbacks stacked below one another forming a pyramid structure. Every callback depends/waits for the previous callback, thereby making a pyramid structure that affects the readability and maintainability of the code. "
 );
@@ -269,6 +271,7 @@ When a Promise object is "rejected", the result is an error object.`);
 console.log(`Problem #14: What is async/await?\n
 The async function declaration declares an async function where the await keyword is permitted within the function body. The async and await keywords enable asynchronous, promise-based behavior to be written in a cleaner style, avoiding the need to explicitly configure promise chains.
 `);
+
 console.log(
   "Problem #15: Using Git, please push this code up to your GitHub repo following the directions:\n"
 );
