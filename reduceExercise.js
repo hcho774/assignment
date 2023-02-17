@@ -127,3 +127,18 @@ console.log(voterResults(voters)); // Returned value shown below:
   numOldsPeople: 4 
 }
 */
+
+const url = "https://api.github.com/users/hcho774/repos";
+
+// $.get(url, (data, status) => {
+//   console.log(data);
+// });
+
+fetch(url)
+  .then((response) => response.json())
+  .then((data) => {
+    const watcher = data.reduce((acc, { watchers }) => {
+      return acc + watchers;
+    }, 0);
+    console.log(watcher);
+  });
